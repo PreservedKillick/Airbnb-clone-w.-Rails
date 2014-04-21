@@ -12,12 +12,16 @@
 
   </div>
 
-  <h3 id="prop_location">Location:</h3>
-  <p class="indent"><%= @property.location %></p>
+  <h3>Location:</h3>
+  <p class="indent" id="prop_location"><%= @property.location %></p>
   <br>
   <br>
-  <h3 id="prop_description">Description:</h3>
-  <p class="indent"><%= @property.description %></p>
+  <h3>Description:</h3>
+  <p id="prop_description" class="indent"><%= @property.description %></p>
+  <br>
+  <br>
+  <h3>Price:</h3>
+  <p class="indent">$<span id="prop_price"><%= @property.price %></span> per night</p>
   <br>
   <br>
   <% if @property.user_id == current_user.id %>

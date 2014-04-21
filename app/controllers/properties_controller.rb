@@ -1,6 +1,7 @@
 class PropertiesController < ApplicationController
 
   def index
+    @properties = Properties.all
   end
 
   def new
@@ -48,7 +49,7 @@ class PropertiesController < ApplicationController
 private
 
   def property_params
-    params.require(:property).permit(:name, :location, :description, :user_id)
+    params.require(:property).permit(:name, :location, :description, :user_id, :price)
   end
 
 end
