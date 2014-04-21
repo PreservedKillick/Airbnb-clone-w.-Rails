@@ -1,5 +1,5 @@
 <%= render("layouts/errors", :object => @user) %>
-<% form_for(@user) do |f| %>
+<% form_for @user, :html => { :multipart => true } do |f| %>
   <div class="form-group">
     <%= f.label :name %>
     <%=  f.text_field :name %>
@@ -9,7 +9,7 @@
     <%= f.text_field %>
   </div>
   <div class="form-group">
-    <%= f.label :avatar, "photo" %>
+    <%= f.label :avatar, "Headshot" %>
     <%= f.file_field :avatar %>
   </div>
   <div class="owner">

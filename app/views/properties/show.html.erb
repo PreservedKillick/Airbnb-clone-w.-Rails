@@ -22,6 +22,8 @@
   <br>
   <% if @property.user_id == current_user.id %>
     <%= link_to 'Add Picture', new_property_photo_path(@property), class: 'btn btn-primary', remote: true, id: "new_photo_link" %>
+    <br>
+    <br>
     <%=  link_to 'Edit Property Details', edit_property_path(@property), class: 'btn btn-primary', remote: true, id: "edit_property_link" %>
   <% end %>
 </div>

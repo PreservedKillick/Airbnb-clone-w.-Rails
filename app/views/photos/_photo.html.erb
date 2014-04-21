@@ -2,6 +2,8 @@
 
   <%= image_tag photo.pic.url(:thumb) %> <br>
   <%= photo.caption %> <br>
-  <%= link_to "(delete)", property_photo_path(@property, photo), method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
+  <% if @property.user_id == current_user.id %>
+    <%= link_to "(delete)", property_photo_path(@property, photo), method: :delete, data: {confirm: "Are you sure?"}, remote: true %>
+  <% end %>
 
 </li>
