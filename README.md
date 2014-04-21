@@ -13,10 +13,9 @@ ___________________________
 
 3. As a property owner, I want to be able to advertise my property on the site with a description, photos, location, and price.
 
-3. As a user, I want to be able to view the available properties.
+4. As a user, I want to be able to view the available properties.
 
-3. As a user, I want to be able to sign up and log in so that I can access details about the owners of each property.
+5. As a user, I want to be able to sign up and log in so that I can access details about the owners of each property.
 
-4. As a user, I want to be able to email property owners inquiries about their respective properties.
+6. As a user, I want to be able to email property owners inquiries about their respective properties.
 
-4. As an owner, I want to be able to view the JANBnB history of users.
