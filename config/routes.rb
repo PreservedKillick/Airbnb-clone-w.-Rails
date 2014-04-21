@@ -6,9 +6,6 @@ JANBnB::Application.routes.draw do
     resources :photos
   end
 
-
   root 'users#index'
-
-
 
 end
