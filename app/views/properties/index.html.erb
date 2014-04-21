@@ -1,2 +1,17 @@
 <% content_for(:title, "Properties | janBnB") %>
 
+<div class="panel panel-default">
+  <div class="panel-body">
+    <% if @properties != nil %>
+      <% @properties.each do |prop| %>
+        <br>
+        <% image = prop.photos.pop %>
+        <%= image_tag image.pic.url(:thumb) %>
+        <br>
+        <%= link_to prop.name, property_url(prop) %>
+        <br>
+        <br>
+      <% end %>
+    <% end %>
+  </div>
+</div>

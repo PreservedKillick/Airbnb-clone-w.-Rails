@@ -24,6 +24,9 @@
   <p class="indent">$<span id="prop_price"><%= @property.price %></span> per night</p>
   <br>
   <br>
+  <%= link_to 'View All Properties', properties_path, class: 'btn btn-warning' %>
+  <br>
+  <br>
   <% if @property.user_id == current_user.id %>
     <%= link_to 'Add Picture', new_property_photo_path(@property), class: 'btn btn-primary', remote: true, id: "new_photo_link" %>
     <br>
